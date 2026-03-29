@@ -1,96 +1,166 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorteos L&D | Participá y Ganá</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root {
-            --primary-gold: #cbb26a;
-            --dark-bg: #121212;
-            --card-bg: #1e1e1e;
-            --whatsapp-green: #25D366;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sorteos DyS | Gana premios reales</title>
 
-        body {
-            font-family: 'Segoe UI', Roboto, sans-serif;
-            margin: 0;
-            background-color: var(--dark-bg);
-            color: white;
-            line-height: 1.6;
-        }
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-        
-        /* Header */
-        header { text-align: center; padding: 30px 0; border-bottom: 2px solid var(--primary-gold); }
-        .logo { font-size: 2.5rem; font-weight: bold; }
+<style>
+:root {
+    --gold: #cbb26a;
+    --dark: #121212;
+    --card: #1e1e1e;
+    --green: #25D366;
+}
 
-        /* Hero Section */
-        .hero { text-align: center; padding: 40px 20px; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&q=80&w=1000') center/cover; border-radius: 15px; margin-top: 20px; }
-        .hero h1 { color: white; text-transform: uppercase; font-size: 1.8rem; }
-        .hero p { color: var(--primary-gold); font-weight: bold; }
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: var(--dark);
+    color: white;
+}
 
-        /* Secciones de Contenido */
-        .section-title { color: var(--primary-gold); text-align: center; margin-top: 40px; font-size: 1.5rem; }
-        
-        .card { background: var(--card-bg); padding: 20px; border-radius: 15px; margin-bottom: 20px; text-align: center; border: 1px solid #333; }
-        .card i { font-size: 2.5rem; color: var(--primary-gold); margin-bottom: 15px; }
+.container { max-width: 600px; margin: auto; padding: 20px; }
 
-        /* Pasos 1, 2, 3 */
-        .step-number { background: white; color: black; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-weight: bold; font-size: 1.2rem; }
+header { text-align: center; padding: 20px; border-bottom: 2px solid var(--gold); }
 
-        /* Botón Flotante y Normal */
-        .btn-ws { background-color: var(--whatsapp-green); color: white; text-decoration: none; padding: 18px; border-radius: 50px; display: block; font-weight: bold; font-size: 1.1rem; transition: 0.3s; margin: 20px 0; }
-        
-        footer { text-align: center; padding: 40px; font-size: 0.8rem; color: #666; }
-    </style>
+.logo { font-size: 2.2rem; font-weight: bold; }
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1607083206968-13611e3d76db?auto=format&fit=crop&w=1000&q=80') center/cover;
+    border-radius: 15px;
+}
+
+.hero h1 { font-size: 1.9rem; }
+
+.hero p { color: var(--gold); font-weight: bold; }
+
+.urgency {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn {
+    background: var(--green);
+    padding: 18px;
+    border-radius: 50px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--gold);
+    margin-top: 40px;
+}
+
+.card {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.step {
+    background: white;
+    color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: #777;
+}
+</style>
 </head>
+
 <body>
 
 <div class="container">
-    <header>
-        <div class="logo">Sorteos <span style="color:var(--primary-gold)">L&D</span></div>
-    </header>
 
-    <section class="hero">
-        <h1>PARTICIPÁ, GANÁ Y CELEBRÁ</h1>
-        <p>¡PREMIOS REALES TODOS LOS DÍAS!</p>
-        <a href="https://chat.whatsapp.com/FR1wa0fbUGJCvh848Emg8d" class="btn-ws"><i class="fab fa-whatsapp"></i> UNIRSE AL GRUPO</a>
-    </section>
+<header>
+    <div class="logo">Sorteos <span style="color:var(--gold)">DyS</span></div>
+</header>
 
-    <h2 class="section-title">¿Qué puedes ganar?</h2>
-    <div class="card">
-        <i class="fas fa-gift"></i>
-        <h3>Premios Increíbles</h3>
-        <p>Desde dinero en efectivo hasta los últimos dispositivos tecnológicos (PS5, iPhone, Relojes).</p>
-    </div>
+<section class="hero">
+    <h1>🎁 Gana premios reales TODOS LOS DÍAS</h1>
+    <p>Participa en segundos desde WhatsApp 👇</p>
 
-    <h2 class="section-title">¿Cómo funciona?</h2>
-    <div class="card">
-        <div class="step-number">1</div>
-        <h3>Únete al Grupo</h3>
-        <p>Haz clic en el botón verde para entrar a nuestra comunidad oficial.</p>
-    </div>
-    <div class="card">
-        <div class="step-number">2</div>
-        <h3>Regístrate</h3>
-        <p>Sigue las instrucciones fijadas en el grupo para tu registro oficial.</p>
-    </div>
+    <p>✔️ +1,000 personas participando</p>
+    <p>✔️ Ganadores reales cada semana</p>
 
-    <div class="card" style="border: 1px dashed var(--primary-gold);">
-        <i class="fas fa-shield-alt"></i>
-        <h3>100% Seguro</h3>
-        <p>Tu información está protegida y nuestros sorteos son transparentes.</p>
-    </div>
+    <div class="urgency">⚠️ Cupos limitados hoy</div>
 
-    <a href="https://chat.whatsapp.com/FR1wa0fbUGJCvh848Emg8d" class="btn-ws" style="text-align: center;"><i class="fab fa-whatsapp"></i> ¡QUIERO ENTRAR AL GRUPO!</a>
+    <a href="https://chat.whatsapp.com/FR1wa0fbUGJCvh848Emg8d" class="btn">
+        👉 QUIERO PARTICIPAR AHORA
+    </a>
+</section>
 
-    <footer>
-        <p>&copy; 2024 Sorteos L&D - No afiliado a WhatsApp Inc.<br>
-        <a href="#" style="color:#666">Términos y Condiciones</a> | <a href="#" style="color:#666">Política de Privacidad</a></p>
-    </footer>
+<h2 class="section-title">¿Qué puedes ganar?</h2>
+
+<div class="card">
+    <i class="fas fa-gift"></i>
+    <h3>Premios reales</h3>
+    <p>Dinero en efectivo, iPhone, PS5, relojes y más.</p>
+</div>
+
+<h2 class="section-title">¿Cómo funciona?</h2>
+
+<div class="card">
+    <div class="step">1</div>
+    <h3>Entra al grupo</h3>
+    <p>Haz clic en el botón y accede al grupo oficial.</p>
+</div>
+
+<div class="card">
+    <div class="step">2</div>
+    <h3>Sigue instrucciones</h3>
+    <p>Te indicamos cómo participar fácilmente.</p>
+</div>
+
+<div class="card">
+    <div class="step">3</div>
+    <h3>Participa</h3>
+    <p>Entra al sorteo y aumenta tus posibilidades.</p>
+</div>
+
+<div class="card">
+    <div class="step">4</div>
+    <h3>¡Gana!</h3>
+    <p>Anunciamos ganadores en el grupo oficial.</p>
+</div>
+
+<a href="https://chat.whatsapp.com/FR1wa0fbUGJCvh848Emg8d" class="btn">
+    🚀 ENTRAR AL GRUPO AHORA
+</a>
+
+<footer>
+<p>© 2024 Sorteos DyS</p>
+<a href="privacy.html">Política de Privacidad</a> |
+<a href="terms.html">Términos y Condiciones</a>
+</footer>
+
 </div>
 
 </body>
